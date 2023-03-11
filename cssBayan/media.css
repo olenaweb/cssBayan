@@ -8,16 +8,28 @@
   html {
     font-size: 14px;
   }
+
+  .box-img img {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 900px) {
   html {
     font-size: 12px;
   }
+
+  .box-img img {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   html {
     font-size: 12px;
+  }
+
+  .box-img img {
+    width: 60%;
   }
 }
