@@ -15,6 +15,7 @@ html {
   --orange-color: #FE9013;
   --blue-color2: rgba(4, 150, 235, 0.982);
   --blue-color3: rgba(17, 101, 227, 0.811);
+  --blue-color4: rgba(11, 79, 180, 0.963);
 
   --text-color: #333B41;
   --head-color: rgba(0, 0, 0, 0.785);
@@ -80,18 +81,15 @@ hr {
   /* min-height: 10%; */
   margin: 0 auto;
   width: 100%;
-  cursor: pointer;
   font-size: 1.5rem;
   font-weight: 800;
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(129, 121, 108, 0.614);
-  transition: background ease-out 0.5s;
+  /* cursor: pointer; */
+  /* transition: background ease-out 0.5s; */
 }
 
-/* .box-item:has(.box-title) {
-  border: 1px solid red;
-} */
-
 .box-title {
+  cursor: pointer;
   display: block;
   padding: 1rem;
   position: relative;
@@ -100,14 +98,14 @@ hr {
 .box-img {
   text-align: center;
   display: none;
-  padding: 0 0 1rem;
+  padding: 1.5rem 0px 1.5rem
 }
 
 .box-img img {
   text-align: center;
   width: 20%;
   height: auto;
-  /* transition: all .5s ease-out; */
+  cursor: pointer;
   /* transition: all 500ms ease-in-out; */
 }
 
@@ -125,15 +123,14 @@ hr {
   right: 4px;
 
   border-style: solid;
-  border-width: 8px 5px 0 5px;
+  border-width: 15px 7.5px 0 7.5px;
   border-color: rgb(74, 73, 120) transparent transparent transparent;
 }
-
 
 .box-input {
   appearance: none;
   -webkit-appearance: none;
-  /* display: none; */
+  display: none;
 }
 
 /* -----Show picture---- */
@@ -142,13 +139,16 @@ hr {
   border: 1px solid red;
 } */
 
-
-.box-title:hover~.box-img,
+.box-item:hover .box-img,
 .box-input:checked~.box-img {
   display: block;
 }
 
 /* ------checked------ */
+.box-img:active {
+  display: block;
+}
+
 .box-input:checked~.box-title {
   color: var(--orange-color);
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(56, 53, 48, 0.88);
@@ -158,30 +158,37 @@ hr {
   background-color: #c0b32017;
 }
 
-.box-input:checked~.box-title:after {
+.box-item:hover .box-title:after {
   border-style: solid;
-  border-width: 0 5px 8px 5px;
-  border-color: transparent transparent rgb(236, 157, 12) transparent;
+  border-width: 0 7.5px 15px 7.5px;
+  border-color: transparent transparent rgb(7, 82, 231) transparent;
 }
 
+.box-input:checked~.box-title:after {
+  border-style: solid;
+  border-width: 0 7.5px 15px 7.5px;
+  border-color: transparent transparent rgb(236, 157, 12) transparent;
+}
 
 .box-item:hover {
   color: var(--blue-color3);
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(56, 53, 48, 0.88);
 }
 
-.box-input:hover~.box-title:after {
-  border-style: solid;
-  border-width: 0 5px 8px 5px;
-  border-color: transparent transparent rgb(7, 82, 231) transparent;
+.box-img img:hover {
+  /* img:hover { */
+  border: 3px solid var(--blue-color4);
+  border-radius: 10px;
+  -webkit-box-shadow: 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 
 /* ------animate-------- */
 
 .animate {
-  -webkit-animation: animatezoom 2s;
-  animation: animatezoom 2s
+  -webkit-animation: animatezoom 1.5s;
+  animation: animatezoom 1.5s
 }
 
 @-webkit-keyframes animatezoom {
