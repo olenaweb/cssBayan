@@ -89,7 +89,7 @@ hr {
 .box-title {
   cursor: pointer;
   display: block;
-  padding: 1rem;
+  padding: 1.5rem;
   position: relative;
 }
 
@@ -101,7 +101,7 @@ hr {
 
 .box-img img {
   text-align: center;
-  width: 20%;
+  width: 25%;
   height: auto;
   height: inherit;
   cursor: pointer;
@@ -139,14 +139,15 @@ hr {
   border: 1px solid red;
 } */
 
-.box-item:hover .box-img,
+
+.box-title:hover .box-img,
 .box-input:checked~.box-img {
   display: block;
 }
 
 /* ------checked------ */
 
-.box-input:checked~.box-title {
+.box-title:has(.box-input:checked) {
   color: var(--orange-color);
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(56, 53, 48, 0.88);
 }
@@ -158,16 +159,17 @@ hr {
 .box-item:hover .box-title:after {
   border-style: solid;
   border-width: 0 7.5px 15px 7.5px;
-  border-color: transparent transparent rgb(7, 82, 231) transparent;
+  /* border-color: transparent transparent rgb(7, 82, 231) transparent; */
+  border-color: transparent transparent rgb(74, 73, 120) transparent;
 }
 
-.box-input:checked~.box-title:after {
+/* .box-title:after:has(.box-input:checked) {
   border-style: solid;
   border-width: 0 7.5px 15px 7.5px;
   border-color: transparent transparent rgb(192, 127, 7) transparent;
-}
+} */
 
-.box-item:hover {
+.box-title:hover {
   color: var(--blue-color3);
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(56, 53, 48, 0.88);
 }
