@@ -13,8 +13,12 @@ html {
 
 :root {
   --orange-color: #cb7007;
+  --blue-color2: rgba(4, 150, 235, 0.982);
   --blue-color3: rgba(17, 101, 227, 0.811);
   --blue-color4: rgba(11, 79, 180, 0.963);
+
+  --text-color: #333B41;
+  --head-color: rgba(0, 0, 0, 0.785);
 }
 
 body {
@@ -167,6 +171,7 @@ hr {
   color: var(--blue-color3);
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(56, 53, 48, 0.88);
 }
+
 
 .box-img img:hover {
   border: 3px solid var(--blue-color4);
