@@ -179,8 +179,8 @@ hr {
 /* ------animate-------- */
 
 .animate {
-  -webkit-animation: animatezoom 1.5s;
-  animation: animatezoom 1.5s
+  -webkit-animation: animatezoom 2s;
+  animation: animatezoom 2s
 }
 
 @-webkit-keyframes animatezoom {
