@@ -12,7 +12,7 @@ html {
 }
 
 :root {
-  --orange-color: #FE9013;
+  --orange-color: #cb7007;
   --blue-color2: rgba(4, 150, 235, 0.982);
   --blue-color3: rgba(17, 101, 227, 0.811);
   --blue-color4: rgba(11, 79, 180, 0.963);
@@ -84,7 +84,6 @@ hr {
   font-size: 1.5rem;
   font-weight: 800;
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(129, 121, 108, 0.614);
-  /* cursor: pointer; */
   /* transition: background ease-out 0.5s; */
 }
 
@@ -145,9 +144,6 @@ hr {
 }
 
 /* ------checked------ */
-.box-img:active {
-  display: block;
-}
 
 .box-input:checked~.box-title {
   color: var(--orange-color);
@@ -167,7 +163,7 @@ hr {
 .box-input:checked~.box-title:after {
   border-style: solid;
   border-width: 0 7.5px 15px 7.5px;
-  border-color: transparent transparent rgb(236, 157, 12) transparent;
+  border-color: transparent transparent rgb(192, 127, 7) transparent;
 }
 
 .box-item:hover {
@@ -175,8 +171,11 @@ hr {
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(56, 53, 48, 0.88);
 }
 
+/* .box:hover .box-title:after {
+  display: block;
+} */
+/* .box-img:focus { */
 .box-img img:hover {
-  /* img:hover { */
   border: 3px solid var(--blue-color4);
   border-radius: 10px;
   -webkit-box-shadow: 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 5px 5px 15px 5px rgba(0, 0, 0, 0);
