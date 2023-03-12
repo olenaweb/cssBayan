@@ -33,3 +33,13 @@
     width: 60%;
   }
 }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+
+  .box-img img {
+    width: 80%;
+  }
+}

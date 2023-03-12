@@ -13,12 +13,8 @@ html {
 
 :root {
   --orange-color: #cb7007;
-  --blue-color2: rgba(4, 150, 235, 0.982);
   --blue-color3: rgba(17, 101, 227, 0.811);
   --blue-color4: rgba(11, 79, 180, 0.963);
-
-  --text-color: #333B41;
-  --head-color: rgba(0, 0, 0, 0.785);
 }
 
 body {
@@ -84,7 +80,6 @@ hr {
   font-size: 1.5rem;
   font-weight: 800;
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(129, 121, 108, 0.614);
-  /* transition: background ease-out 0.5s; */
 }
 
 .box-title {
@@ -95,22 +90,20 @@ hr {
 }
 
 .box-img {
-  text-align: center;
   display: none;
-  padding: 1.5rem 0px 1.5rem
+  text-align: center;
+  padding: 1.5rem 0px 1.5rem;
 }
 
 .box-img img {
   text-align: center;
   width: 20%;
   height: auto;
+  height: inherit;
   cursor: pointer;
-  /* transition: all 500ms ease-in-out; */
+  transition: all 500ms ease-in-out;
 }
 
-.box:hover .box-title:after {
-  display: block;
-}
 
 .box-title:after {
   content: "";
@@ -124,6 +117,10 @@ hr {
   border-style: solid;
   border-width: 15px 7.5px 0 7.5px;
   border-color: rgb(74, 73, 120) transparent transparent transparent;
+}
+
+.box:hover .box-title:after {
+  display: block;
 }
 
 .box-input {
@@ -171,10 +168,6 @@ hr {
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(56, 53, 48, 0.88);
 }
 
-/* .box:hover .box-title:after {
-  display: block;
-} */
-/* .box-img:focus { */
 .box-img img:hover {
   border: 3px solid var(--blue-color4);
   border-radius: 10px;
@@ -192,20 +185,20 @@ hr {
 
 @-webkit-keyframes animatezoom {
   from {
-    -webkit-transform: scale(0)
+    -webkit-transform: scale(0);
   }
 
   to {
-    -webkit-transform: scale(1)
+    -webkit-transform: scale(1);
   }
 }
 
 @keyframes animatezoom {
   from {
-    transform: scale(0)
+    transform: scale(0);
   }
 
   to {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
