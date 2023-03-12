@@ -140,7 +140,7 @@ hr {
 } */
 
 
-.box-title:hover .box-img,
+.box-item:hover .box-img,
 .box-input:checked~.box-img {
   display: block;
 }
