@@ -78,7 +78,6 @@ hr {
 }
 
 .box-item {
-  /* min-height: 10%; */
   margin: 0 auto;
   width: 100%;
   font-size: 1.5rem;
@@ -109,42 +108,36 @@ hr {
 }
 
 .box-img img:active {
-  opacity: 0.2;
-}
-
-
-.box-title:after {
-  content: "";
-  /* display: block; */
-  display: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 4px;
-  border-style: solid;
-  border-width: 15px 7.5px 0 7.5px;
-  border-color: rgb(74, 73, 120) transparent transparent transparent;
-  transition: all 1s ease-out;
-
+  opacity: 0.5;
 }
 
 /* -------------- */
-/* box-title>.box-plus {
+box-title>.box-plus {
   opacity: 0;
   font-size: 1rem;
   font-weight: 600;
   margin: 0 0 0 auto;
-  transition: transform .8s ease-out, opacity .5s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.plus {
+  display: flex;
+  justify-content: end;
+  margin-top: -1.7rem;
 }
 
 .box>*:hover .box-plus {
   transform: rotate(45deg);
-} */
+}
 
-/* ---------------- */
-.box:hover .box-title:after {
-  /* opacity: 1; */
-  display: block;
+.box-item:has(.box-input:checked) .box-plus {
+  transform: rotate(45deg);
+}
+
+
+.box:hover .box-plus {
+  opacity: 1;
+  transition: all 0.5s ease-out;
 }
 
 .box-input {
@@ -166,11 +159,6 @@ hr {
   display: block;
 }
 
-.box-item:hover .box-title:after {
-  display: block;
-  top: 7%;
-}
-
 /* ------checked------ */
 
 .box-title:has(.box-input:checked) {
@@ -180,18 +168,6 @@ hr {
 
 .box-item:has(.box-input:checked) {
   background-color: #c0b32017;
-}
-
-.box-item:has(.box-input:checked) .box-title:after {
-  top: 7%;
-  border-width: 0 7.5px 15px 7.5px;
-  border-color: transparent transparent #cb7007 transparent;
-}
-
-.box-item:hover .box-title:after {
-  border-style: solid;
-  border-width: 0 7.5px 15px 7.5px;
-  border-color: transparent transparent rgb(7, 82, 231) transparent;
 }
 
 .box-title:hover {
@@ -211,8 +187,8 @@ hr {
 /* ------animate-------- */
 
 .animate {
-  -webkit-animation: animatezoom 2s;
-  animation: animatezoom 2s
+  -webkit-animation: animatezoom 1.5s;
+  animation: animatezoom 1.5s
 }
 
 @-webkit-keyframes animatezoom {
