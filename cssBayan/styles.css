@@ -3,9 +3,9 @@ html {
   scroll-behavior: smooth;
 }
 
-*,
-*::after,
-*::before {
+* {
+  /* *::after, */
+  /* *::before { */
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -89,7 +89,6 @@ hr {
   cursor: pointer;
   display: block;
   padding: 1.5rem;
-  position: relative;
 }
 
 .box-img {
@@ -115,23 +114,18 @@ hr {
 
 .plus {
   visibility: hidden;
+  opacity: 0;
   display: flex;
   justify-content: end;
   margin-top: -1.7rem;
+  font-weight: 600;
+  transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 .box:hover .plus {
   visibility: visible;
+  opacity: 1;
 }
-
-box-title>.box-plus {
-  opacity: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0 0 0 auto;
-  transition: transform 1s ease-out, opacity 1s ease-out;
-}
-
 
 .box>*:hover .box-plus {
   transform: rotate(45deg);
@@ -154,11 +148,6 @@ box-title>.box-plus {
 
 /* -----Show picture---- */
 
-/* .box-item:has(.box-title) {
-  border: 1px solid red;
-} */
-
-
 .box-item:hover .box-img,
 .box-input:checked~.box-img {
   display: block;
@@ -175,11 +164,12 @@ box-title>.box-plus {
   background-color: #c0b32017;
 }
 
+/* ----hovered----- */
+
 .box-title:hover {
   color: var(--blue-color3);
   text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(56, 53, 48, 0.88);
 }
-
 
 .box-img img:hover {
   border: 0.18rem solid var(--blue-color4);
