@@ -34,15 +34,15 @@ body {
 
 .container {
   display: flex;
-  flex: 1 1 1200px;
-  max-width: 1200px;
+  flex: 1 1 75rem;
+  max-width: 75rem;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
   min-height: 100vh;
 
   border: 1px solid rgba(30, 29, 29, 0.395);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: rgb(180, 180, 169);
 
   -webkit-box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.38);
@@ -95,7 +95,7 @@ hr {
 .box-img {
   display: none;
   text-align: center;
-  padding: 1.5rem 0px 1.5rem;
+  padding: 1.5rem 0 1.5rem;
 }
 
 .box-img img {
@@ -177,8 +177,8 @@ box-title>.box-plus {
 
 
 .box-img img:hover {
-  border: 3px solid var(--blue-color4);
-  border-radius: 10px;
+  border: 0.18rem solid var(--blue-color4);
+  border-radius: 1rem;
   -webkit-box-shadow: 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
