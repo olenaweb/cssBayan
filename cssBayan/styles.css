@@ -112,6 +112,7 @@ hr {
 }
 
 /* -------------- */
+
 box-title>.box-plus {
   opacity: 0;
   font-size: 1rem;
@@ -121,6 +122,10 @@ box-title>.box-plus {
 }
 
 .plus {
+  display: none;
+}
+
+.box:hover .plus {
   display: flex;
   justify-content: end;
   margin-top: -1.7rem;
@@ -133,7 +138,6 @@ box-title>.box-plus {
 .box-item:has(.box-input:checked) .box-plus {
   transform: rotate(45deg);
 }
-
 
 .box:hover .box-plus {
   opacity: 1;
