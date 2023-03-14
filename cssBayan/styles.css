@@ -121,13 +121,29 @@ hr {
   top: 50%;
   transform: translateY(-50%);
   right: 4px;
-
   border-style: solid;
   border-width: 15px 7.5px 0 7.5px;
   border-color: rgb(74, 73, 120) transparent transparent transparent;
+  transition: all 1s ease-out;
+
 }
 
+/* -------------- */
+/* box-title>.box-plus {
+  opacity: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0 auto;
+  transition: transform .8s ease-out, opacity .5s ease-out;
+}
+
+.box>*:hover .box-plus {
+  transform: rotate(45deg);
+} */
+
+/* ---------------- */
 .box:hover .box-title:after {
+  /* opacity: 1; */
   display: block;
 }
 
@@ -146,6 +162,7 @@ hr {
 
 .box-item:hover .box-img,
 .box-input:checked~.box-img {
+  /* opacity: 1; */
   display: block;
 }
 
@@ -176,12 +193,6 @@ hr {
   border-width: 0 7.5px 15px 7.5px;
   border-color: transparent transparent rgb(7, 82, 231) transparent;
 }
-
-/* .box-title:after:has(.box-input:checked) {
-  border-style: solid;
-  border-width: 0 7.5px 15px 7.5px;
-  border-color: transparent transparent rgb(192, 127, 7) transparent;
-} */
 
 .box-title:hover {
   color: var(--blue-color3);
