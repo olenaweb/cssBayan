@@ -111,7 +111,18 @@ hr {
   opacity: 0.5;
 }
 
-/* -------------- */
+/* ----plus---------- */
+
+.plus {
+  visibility: hidden;
+  display: flex;
+  justify-content: end;
+  margin-top: -1.7rem;
+}
+
+.box:hover .plus {
+  visibility: visible;
+}
 
 box-title>.box-plus {
   opacity: 0;
@@ -121,15 +132,6 @@ box-title>.box-plus {
   transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
-.plus {
-  display: none;
-}
-
-.box:hover .plus {
-  display: flex;
-  justify-content: end;
-  margin-top: -1.7rem;
-}
 
 .box>*:hover .box-plus {
   transform: rotate(45deg);
