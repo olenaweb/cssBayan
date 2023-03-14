@@ -1,0 +1,50 @@
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+
+  .box-img img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+
+  .box-img img {
+    width: 40%;
+  }
+
+  .box-img {
+    padding: 3rem 0px 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+
+  .box-img img {
+    width: 60%;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+
+  .box-img img {
+    width: 75%;
+  }
+}

@@ -1,0 +1,207 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  /* *::after, */
+  /* *::before { */
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --orange-color: #cb7007;
+  --blue-color2: rgba(4, 150, 235, 0.982);
+  --blue-color3: rgba(17, 101, 227, 0.811);
+  --blue-color4: rgba(11, 79, 180, 0.963);
+
+  --text-color: #333B41;
+  --head-color: rgba(0, 0, 0, 0.785);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  background: linear-gradient(to bottom right, rgba(104, 129, 158, 0.596), rgba(36, 63, 96, 0.651), rgba(59, 69, 0, 0.6));
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: calc(20rem / 16);
+}
+
+.container {
+  display: flex;
+  flex: 1 1 75rem;
+  max-width: 75rem;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  min-height: 100vh;
+
+  border: 0.0625rem solid rgba(30, 29, 29, 0.395);
+  border-radius: 0.625rem;
+  background-color: rgb(180, 180, 169);
+
+  -webkit-box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.38);
+  box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.38);
+}
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  align-self: flex-start;
+  padding: 2rem;
+  margin: 0 0 0 1.5rem;
+  text-shadow: 2px 2px 2px rgba(100, 91, 85, 0), 0px 2px 2px rgba(112, 103, 84, 0.877);
+}
+
+hr {
+  width: 100%;
+  height: 0.125rem;
+  border: none;
+  background-color: rgb(76, 86, 123);
+  box-shadow: 2px 2px 2px rgba(100, 91, 85, 0), 0px 2px 2px rgba(70, 70, 69, 0.662);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 90%;
+  padding: 1rem 0;
+}
+
+.box-item {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(129, 121, 108, 0.614);
+}
+
+.box-title {
+  cursor: pointer;
+  display: block;
+  padding: 1.5rem;
+}
+
+.box-img {
+  display: none;
+  text-align: center;
+  padding: 1.5rem 0 1.5rem;
+}
+
+.box-img img {
+  text-align: center;
+  width: 25%;
+  height: auto;
+  height: inherit;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.box-img img:active {
+  opacity: 0.5;
+}
+
+/* ----plus---------- */
+
+.plus {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: end;
+  margin-top: -1.7rem;
+  font-weight: 600;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.box:hover .plus {
+  visibility: visible;
+  opacity: 1;
+}
+
+.box>*:hover .box-plus {
+  transform: rotate(45deg);
+}
+
+.box-item:has(.box-input:checked) .box-plus {
+  transform: rotate(45deg);
+}
+
+.box:hover .box-plus {
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+
+.box-input {
+  appearance: none;
+  -webkit-appearance: none;
+  display: none;
+}
+
+/* -----Show picture---- */
+
+.box-item:hover .box-img,
+.box-input:checked~.box-img {
+  display: block;
+}
+
+/* ------checked------ */
+
+.box-title:has(.box-input:checked) {
+  color: var(--orange-color);
+  text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(56, 53, 48, 0.88);
+}
+
+.box-item:has(.box-input:checked) {
+  background-color: #c0b32017;
+}
+
+/* ----hovered----- */
+
+.box-title:hover {
+  color: var(--blue-color3);
+  text-shadow: 1px 1px 1px rgb(126 119 115 / 0%), 0px 1px 1px rgba(56, 53, 48, 0.88);
+}
+
+.box-img img:hover {
+  border: 0.18rem solid var(--blue-color4);
+  border-radius: 1rem;
+  -webkit-box-shadow: 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+
+/* ------animate-------- */
+
+.animate {
+  -webkit-animation: animatezoom 1.5s;
+  animation: animatezoom 1.5s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
