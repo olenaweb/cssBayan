@@ -108,6 +108,10 @@ hr {
   transition: all 500ms ease-in-out;
 }
 
+.box-img img:active {
+  opacity: 0.2;
+}
+
 
 .box-title:after {
   content: "";
@@ -145,6 +149,11 @@ hr {
   display: block;
 }
 
+.box-item:hover .box-title:after {
+  display: block;
+  top: 7%;
+}
+
 /* ------checked------ */
 
 .box-title:has(.box-input:checked) {
@@ -154,6 +163,12 @@ hr {
 
 .box-item:has(.box-input:checked) {
   background-color: #c0b32017;
+}
+
+.box-item:has(.box-input:checked) .box-title:after {
+  top: 7%;
+  border-width: 0 7.5px 15px 7.5px;
+  border-color: transparent transparent rgb(74, 73, 120) transparent;
 }
 
 .box-item:hover .box-title:after {
