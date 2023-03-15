@@ -1,7 +1,11 @@
+/* @media (hover) - медиазапрос для устройств с мышкой
+@media (not(hover)) */
+
 @media screen and (max-width: 1600px) {
   html {
     font-size: 16px;
   }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -14,10 +18,32 @@
   }
 }
 
+@media (hover: none) {
+
+  .plus {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .box-item:hover .box-img {
+    display: none;
+  }
+
+  .box-input:checked~.box-img {
+    display: block;
+  }
+
+  .box>*:hover .box-plus {
+    transform: rotate(0deg);
+  }
+}
+
+
 @media screen and (max-width: 900px) {
   html {
     font-size: 12px;
   }
+
 
   .box-img img {
     width: 40%;
@@ -28,6 +54,7 @@
   }
 }
 
+/* @media screen and (hover: none) and (max-width: 600px) { */
 @media screen and (max-width: 600px) {
   html {
     font-size: 12px;
