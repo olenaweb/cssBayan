@@ -1,21 +1,8 @@
-/* @media (hover) - медиазапрос для устройств с мышкой
-@media (not(hover)) */
-
 @media screen and (max-width: 1600px) {
   html {
     font-size: 16px;
   }
 
-}
-
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 14px;
-  }
-
-  .box-img img {
-    width: 30%;
-  }
 }
 
 @media (hover: none) {
@@ -38,6 +25,17 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+
+  .box-img img {
+    width: 30%;
+  }
+}
+
+
 
 @media screen and (max-width: 900px) {
   html {
@@ -54,10 +52,9 @@
   }
 }
 
-/* @media screen and (hover: none) and (max-width: 600px) { */
 @media screen and (max-width: 600px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .box-img img {
@@ -66,12 +63,13 @@
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 330px) {
   html {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .box-img img {
     width: 75%;
   }
+
 }
