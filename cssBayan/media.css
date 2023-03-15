@@ -23,6 +23,15 @@
   .box>*:hover .box-plus {
     transform: rotate(0deg);
   }
+
+  .box-title:hover {
+    color: var(--text-color);
+  }
+
+  .box-img img:hover {
+    box-shadow: none;
+    border: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {
