@@ -6,10 +6,6 @@
 }
 
 @media (hover: none) {
-  html {
-    font-weight: 800;
-  }
-
   .plus-img {
     visibility: visible;
     opacity: 1;
@@ -29,8 +25,6 @@
 
   .box-title:hover {
     color: var(--text-color);
-    font-weight: 800;
-    text-shadow: 0.0625rem 0.0625rem 0.0165rem rgb(126 119 115 / 0%), 0.00rem 0.0625rem 0.0165rem rgba(129, 121, 108, 0.614);
   }
 
   .box-img img:hover {
@@ -44,20 +38,20 @@
   }
 
   .box-img img:active {
-    opacity: 1;
-    border: 0.18rem solid var(--blue-color4);
-    border-radius: 1rem;
-    -webkit-box-shadow: 0.6875rem -0.5625rem 0.625rem#0000FF, 1rem -0.875rem 0.625rem 0rem#00FF00, 1.25rem -1.0625rem 0.625rem 0rem #FFFF00, 1.5rem -1.1875rem 0.625rem 0rem#FF7F00, 0.3125rem -0.3125rem 0.9375rem 0.3125rem rgba(0, 0, 0, 0);
-    box-shadow: 0.6875rem -0.5625rem 0.625rem#0000FF, 1rem -0.875rem 0.625rem 0rem#00FF00, 1.25rem -1.0625rem 0.625rem 0rem #FFFF00, 1.5rem -1.1875rem 0.625rem 0rem#FF7F00, 0.3125rem -0.3125rem 0.9375rem 0.3125rem rgba(0, 0, 0, 0);
-    /* box-shadow: none; */
-    /* border: none; */
-    /* border-radius: 0rem; */
+    opacity: 0.5;
+    /* border: 0.18rem solid var(--blue-color4); */
+    /* border-radius: 1rem; */
+    /* -webkit-box-shadow: 0.6875rem -0.5625rem 0.625rem#0000FF, 1rem -0.875rem 0.625rem 0rem#00FF00, 1.25rem -1.0625rem 0.625rem 0rem #FFFF00, 1.5rem -1.1875rem 0.625rem 0rem#FF7F00, 0.3125rem -0.3125rem 0.9375rem 0.3125rem rgba(0, 0, 0, 0); */
+    /* box-shadow: 0.6875rem -0.5625rem 0.625rem#0000FF, 1rem -0.875rem 0.625rem 0rem#00FF00, 1.25rem -1.0625rem 0.625rem 0rem #FFFF00, 1.5rem -1.1875rem 0.625rem 0rem#FF7F00, 0.3125rem -0.3125rem 0.9375rem 0.3125rem rgba(0, 0, 0, 0); */
+    box-shadow: none;
+    border: none;
+    border-radius: 0rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .box-img img {
@@ -69,7 +63,7 @@
 
 @media screen and (max-width: 900px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 
 
@@ -84,7 +78,7 @@
 
 @media screen and (max-width: 600px) {
   html {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .box-img img {
@@ -95,8 +89,7 @@
 
 @media screen and (max-width: 330px) {
   html {
-    font-size: 10px;
-    font-weight: 800;
+    font-size: 12px;
   }
 
   .box-img img {
