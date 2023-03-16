@@ -112,9 +112,8 @@ hr {
 
 .box-plus {
   display: flex;
-  justify-content: end;
   justify-content: space-between;
-  /* margin-top: -1.7rem; */
+  /* align-items: center; */
   font-weight: 600;
 }
 
