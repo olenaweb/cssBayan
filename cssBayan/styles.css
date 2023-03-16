@@ -84,8 +84,8 @@ hr {
 }
 
 .box-title {
-  cursor: pointer;
   display: block;
+  cursor: pointer;
   padding: 1.5rem;
 }
 
@@ -110,30 +110,39 @@ hr {
 
 /* ----plus---------- */
 
-.plus {
-  visibility: hidden;
-  opacity: 0;
+.box-plus {
   display: flex;
   justify-content: end;
-  margin-top: -1.7rem;
+  justify-content: space-between;
+  /* margin-top: -1.7rem; */
+  font-weight: 600;
+}
+
+.plus-img {
+  visibility: hidden;
+  opacity: 0;
   font-weight: 600;
   transition: transform 1s ease-out, opacity 1s ease-out;
+  width: 1rem;
+  margin-left: 1rem;
 }
 
-.box:hover .plus {
+.box:hover .plus-img {
   visibility: visible;
   opacity: 1;
+  height: 1rem;
 }
 
-.box>*:hover .box-plus {
+.box>*:hover .plus-img {
+  transform: rotate(45deg);
+  height: 1rem;
+}
+
+.box-item:has(.box-input:checked) .plus-img {
   transform: rotate(45deg);
 }
 
-.box-item:has(.box-input:checked) .box-plus {
-  transform: rotate(45deg);
-}
-
-.box:hover .box-plus {
+.box:hover .plus-img {
   opacity: 1;
   transition: all 0.5s ease-out;
 }
