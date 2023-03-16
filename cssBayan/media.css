@@ -6,6 +6,9 @@
 }
 
 @media (hover: none) {
+  html {
+    font-weight: 800;
+  }
 
   .plus-img {
     visibility: visible;
@@ -26,12 +29,18 @@
 
   .box-title:hover {
     color: var(--text-color);
+    font-weight: 800;
+    text-shadow: 0.0625rem 0.0625rem 0.0165rem rgb(126 119 115 / 0%), 0.00rem 0.0625rem 0.0165rem rgba(129, 121, 108, 0.614);
   }
 
   .box-img img:hover {
     box-shadow: none;
     border: none;
     border-radius: 0rem;
+  }
+
+  .box-img img {
+    transition: all 1s ease-in-out;
   }
 
   .box-img img:active {
@@ -44,9 +53,6 @@
     /* border: none; */
     /* border-radius: 0rem; */
   }
-
-
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -89,14 +95,12 @@
 
 @media screen and (max-width: 330px) {
   html {
-    font-size: 9px;
+    font-size: 10px;
+    font-weight: 800;
   }
 
   .box-img img {
     width: 75%;
   }
 
-  /* .box-title {
-    padding: 1rem;
-  } */
 }
